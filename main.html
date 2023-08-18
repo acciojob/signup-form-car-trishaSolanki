@@ -8,27 +8,42 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<h1>Signup Form Car</h1>
+	<h1>Signup Form</h1>
 	<form method="post">
-	<label for="Text">Name</label>
-		<input type="text" id="name" placeholder="jyoti" required="yes"><br>
-		<label for="Email">Email</label>
-		<input type="email" id="email" placeholder="singhaanand969@gmail.com" required="yes"><br>
-		<label for="Radio">Gender</label>
-		<input type="radio" id="female/male" required="yes"><br>
-		<label for="Select">Car Brands</label>
-		<input type="select" id="cars" placeholder="--Please choose an option--" required="yes"><br>
-		<label for="Number">Age</label>
-		<input type="number" id="age" placeholder="age" required="yes"><br>
-		<label for="Date">DOB</label>
-		<input type="Date" id="dob" required="yes"><br>
-		<label for="Tel">Phone Number</label>
-		<input type="tel" id="tel" placeholder="9988774637" required="no"><br>
-		<label for="password">Password</label>
-		<input type="password" id="password" placeholder="password" required="yes"><br>
+	    <label for="name">Name:</label>
+		<input type="text" id="name" placeholder="name" required><br>
+		<label for="email">Email:</label>
+		<input type="email" id="email" placeholder="email" required><br>
+		
+		<label>Gender:</label>
+		<input type="radio" id="gender_f" placeholder="gender" value="Femle" required>
+		<label for="gender_m">Male</label>
+		<input type="radio" id="gender_m" placeholder="gender" value="Male required>
+	   <label for="gender_f">Female</label><br>
+		
+		<label for="cars">Car Brands:</label>
+		<input type="cars" id="cars" placeholder="cars" required><br>
+		<option value=""<option value="" disabled selected>--Please choose an option--</option>
+            <option value="Toyota">Toyota</option>
+            <option value="Honda">Honda</option>
+            <option value="Ford">Ford</option>
+	</selct><br>
+		
+		<label for="age">Age:</label>
+		<input type="number" id="age" placeholder="age" required><br>
+		
+		<label for="dob">DOB:</label>
+		<input type="Date" id="dob" placeholder="dob" required><br>
+		
+		<label for="tel">Phone Number:</label>
+		<input type="tel" id="tel" pattern="[0-9]{3}-[0-9]{3}-[7-7]{8}" placeholder="xxx-xxx-xxxx" required><br>
+		
+		<label for="password">Password:</label>
+		<input type="password" id="password" placeholder="password" required><br>
+		
 		<label for="Checkbox">I agree to the TOS</label>
 		<input type="checkbox" id="tos" required="yes">
-		submit
+		<button type="submit">Submit</button>
 	</form>
     <script type="text/javascript" src="./script.js">
 </script>
